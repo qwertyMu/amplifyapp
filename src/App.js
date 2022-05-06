@@ -10,7 +10,7 @@ function App() {
       {({ signOut, user }) => (
         <div className="App">
           <p>
-            Hey {user.username}, welcome to Tim and Ben's (yet to be named) scheduler App, with auth!
+            Hey {user.username}, welcome to Tim and Ben's (yet to be named) scheduler App, with auth! Auth Test
           </p>
           <button onClick={signOut}>Sign out</button>
         </div>
