@@ -4,6 +4,7 @@ import { API, Storage} from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react-v1';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
+import { EditProfile, NavBar } from './ui-components';
 
 const initialFormState = { name: '', description: '' }
 
@@ -55,6 +56,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <h1>My Notes App</h1>
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
@@ -85,11 +87,12 @@ function App() {
             }
             <br></br>
             <br></br>
-            <button onClick={() => deleteNote(note.id)}>Delete note</button>
+            <button onClick={() => deleteNote(note)}>Delete note</button>
           </div>
         ))
       }
       </div>
+      <EditProfile />
       <AmplifySignOut />
     </div>
   );

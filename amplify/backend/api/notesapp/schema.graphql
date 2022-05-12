@@ -1,3 +1,11 @@
+type People @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  location: String
+  specialism: String
+  email: AWSEmail
+}
+
 type Note @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!

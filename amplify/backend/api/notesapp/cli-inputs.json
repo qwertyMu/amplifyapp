@@ -3,7 +3,7 @@
   "serviceConfiguration": {
     "apiName": "notesapp",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-7810bb58-570e-4134-ab70-669cdd4a22e9/amplify/backend/api/notesapp/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-2420f15f-5dfe-421c-8701-aa2916a39036/amplify/backend/api/notesapp/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
       "keyDescription": "api key description",
