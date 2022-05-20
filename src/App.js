@@ -9,8 +9,6 @@ function App() {
   return (
     <div className="App">
       <div class="centre">
-        <NavBar />
-        <EditProfile />
       </div>
       <AmplifySignOut />
     </div>
